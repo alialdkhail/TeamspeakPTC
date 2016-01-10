@@ -2,8 +2,8 @@ package de.phenomax.teamspeakptc.data;
 
 import com.github.theholywaffle.teamspeak3.api.Codec;
 import com.google.gson.*;
-import de.phenomax.teamspeakptc.Main;
-import lombok.Getter;
+import de.phenomax.teamspeakptc.Main;;
+import lombok.*;
 import org.json.simple.*;
 import org.json.simple.parser.*;
 
@@ -16,6 +16,7 @@ import java.util.stream.*;
  * Created by phenomax on 10.1.2015
  */
 @Getter
+@Setter
 public class ChannelData {
 
     private final static Gson gson = new Gson();

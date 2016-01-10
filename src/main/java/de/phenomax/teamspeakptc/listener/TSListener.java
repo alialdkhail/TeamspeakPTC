@@ -1,9 +1,12 @@
 package de.phenomax.teamspeakptc.listener;
 
 import com.github.theholywaffle.teamspeak3.api.event.*;
+import com.github.theholywaffle.teamspeak3.api.wrapper.ChannelInfo;
 import de.phenomax.teamspeakptc.Main;
 import de.phenomax.teamspeakptc.data.ChannelData;
 import de.phenomax.teamspeakptc.util.ChannelHelper;
+
+import java.util.HashMap;
 
 /**
  * Created by phenomax on 10.1.2015
@@ -40,6 +43,19 @@ public class TSListener {
 
             @Override
             public void onChannelDescriptionChanged(ChannelDescriptionEditedEvent channelDescriptionEditedEvent) {
+
+                int channelID = channelDescriptionEditedEvent.getChannelId();
+                String channelName = Main.getTs3api().getChannelInfo(channelID).getName();
+
+                if (!(ChannelData.isChannel(channelName))) {
+                    return;
+                }
+                ChannelInfo info = Main.getTs3api().getChannelInfo(channelID);
+                ChannelData channelData = ChannelData.get(channelID);
+                HashMap<String, Object> settings = channelData.getSettings();
+                settings.put("description", info.getDescription());
+                channelData.setSettings(settings);
+                channelData.save();
 
             }
 
