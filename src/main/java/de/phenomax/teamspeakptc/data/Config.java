@@ -30,14 +30,14 @@ public class Config {
      */
     public Config() {
         this.debug = true;
-        this.host = "minora.io";
+        this.host = "localhost";
         this.virtualServerID = 1;
         this.queryPort = 10011;
         this.channel = 5;
         this.nickname = "TeamspeakPTC";
         this.login = new HashMap<>();
-        this.login.put("username", "testbot");
-        this.login.put("password", "X37kOEfs");
+        this.login.put("username", "serveradmin");
+        this.login.put("password", "password");
         this.whitelisted = false;
     }
 
