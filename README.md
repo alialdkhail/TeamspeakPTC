@@ -1,6 +1,6 @@
-# TeamspeakPTS
+# TeamspeakPTC
 
-Teamspeak PTS is an easy to use java bot for Teamspeak 3, which saves and creates temporary channels for users joining a specific channel.
+Teamspeak PTC is an easy to use java bot for Teamspeak 3, which saves and creates temporary channels for users joining a specific channel.
 
   - Easy to use
   - Lightweight
