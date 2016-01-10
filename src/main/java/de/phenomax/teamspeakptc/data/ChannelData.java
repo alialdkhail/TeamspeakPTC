@@ -1,23 +1,16 @@
 package de.phenomax.teamspeakptc.data;
 
 import com.github.theholywaffle.teamspeak3.api.Codec;
-import com.google.gson.Gson;
+import com.google.gson.*;
 import de.phenomax.teamspeakptc.Main;
 import lombok.Getter;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
+import org.json.simple.*;
+import org.json.simple.parser.*;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.stream.Collectors;
+import java.io.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.stream.*;
 
 /**
  * Created by phenomax on 10.1.2015
