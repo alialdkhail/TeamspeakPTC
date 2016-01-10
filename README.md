@@ -14,5 +14,5 @@ Teamspeak PTS is an easy to use java bot for Teamspeak 3, which saves and create
 WIP
 
 ### License
-The whole project is available under the [Apache License 2.0](https://github.com/phenomax/TeamspeakPTS/LICENSE.md)
+The whole project is available under the [Apache License 2.0](https://github.com/phenomax/TeamspeakPTS/blob/master/LICENSE.md)
 
