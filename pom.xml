@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.phenomax</groupId>
-    <artifactId>TeamspeakPTS</artifactId>
+    <artifactId>TeamspeakPTC</artifactId>
     <version>0.1</version>
     <packaging>jar</packaging>
-    <name>Teamspeak PTS</name>
+    <name>Teamspeak PTC</name>
     <description>Teamspeak Persistent Temporary Channel</description>
-    <url>https://github.com/phenomax/TeamspeakPTS/</url>
+    <url>https://github.com/phenomax/TeamspeakPTC/</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
