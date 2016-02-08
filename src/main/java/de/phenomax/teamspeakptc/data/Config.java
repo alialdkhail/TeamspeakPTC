@@ -1,10 +1,13 @@
 package de.phenomax.teamspeakptc.data;
 
-import com.google.gson.*;
-import lombok.*;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.io.*;
-import java.util.*;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * Created by phenomax on 10.1.2015
@@ -22,7 +25,7 @@ public class Config {
     private int queryPort;
     private int channel;
     private String nickname;
-    private Map<String, String> login;
+    private final Map<String, String> login;
     private boolean whitelisted;
 
     /**
@@ -35,7 +38,7 @@ public class Config {
         this.queryPort = 10011;
         this.channel = 5;
         this.nickname = "TeamspeakPTC";
-        this.login = new HashMap<>();
+        this.login = new LinkedHashMap<>();
         this.login.put("username", "serveradmin");
         this.login.put("password", "password");
         this.whitelisted = false;

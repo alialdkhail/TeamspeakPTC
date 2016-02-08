@@ -22,8 +22,8 @@ public class ChannelData {
     private final static Gson gson = new Gson();
     private final static JSONParser parser = new JSONParser();
 
-    private String name;
-    private int owner;
+    private final String name;
+    private final int owner;
     private HashMap<String, Object> settings = new HashMap<>();
 
     private static List<ChannelData> data = new ArrayList<>();
