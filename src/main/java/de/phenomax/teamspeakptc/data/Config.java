@@ -98,7 +98,7 @@ public class Config {
                     new FileInputStream(configFile)));
             return gson.fromJson(reader, Config.class);
         } catch (FileNotFoundException e) {
-            return null;
+            return fromDefaults();
         }
     }
 }
